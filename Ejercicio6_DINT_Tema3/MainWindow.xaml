@@ -1,0 +1,33 @@
+﻿<Window x:Class="Ejercicio6_DINT_Tema3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio6_DINT_Tema3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel Background="AliceBlue">
+        <TextBlock DockPanel.Dock="Top" Text="Las 4 Estaciones" TextAlignment="Center" FontWeight="Bold" FontSize="30">
+            <TextBlock.Foreground>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="Blue"/>
+                    <GradientStop Color="Yellow" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <UniformGrid Margin="10">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="5">
+                <Image Source="invierno.jpg" />
+            </ScrollViewer>
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="5">
+                <Image Source="primavera.jpg"/>
+            </ScrollViewer>
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="5">
+                <Image Source="verano.jpg"/>
+            </ScrollViewer>
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="5">
+                <Image Source="otoño.jpg"/>
+            </ScrollViewer>
+        </UniformGrid>
+    </DockPanel>
+</Window>
